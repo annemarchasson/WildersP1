@@ -1,0 +1,211 @@
+@media screen and (max-width: 480px) {
+    body {
+
+    } 
+
+  .introduction {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  /* background: url(imagebackground.png);  */
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 5px ;
+  height: 50vh; 
+  width: 100%;
+ 
+  }
+
+  .introduction-content {
+    display: grid;
+    width: 400px;
+  }
+
+  .paragraph {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 100;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 150px; 
+    width: 100%;    
+  }
+
+  .paragraph p {
+    margin: auto;
+    font-weight: lighter;
+  }
+
+  .title-a-propos {
+    font-size: 30px;
+  }
+
+  
+  #first-img {
+    grid-area: 2 / 1 / 3 / 2;
+    padding: 0;
+    margin: 0;
+  }
+
+  .imageW {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    top: 9px; 
+    
+  }
+
+  section#LesWilders2023 {
+    display: none;
+  }
+
+
+  .img-grid{
+    display: inline;
+    border-radius: 20%;
+    margin: 4px;
+    width: 200px;
+  }
+
+  .wrapper {  /* parent  wrapper */
+
+    height: 40vh; 
+    display: inline-flex;
+    flex-direction: row; 
+    max-width: 800px;
+    position: relative;
+    top: 30%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+  }
+
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -12px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -12px;
+  }
+
+ 
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  
+  }
+
+  
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 220px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    border-radius: 20%;
+  
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  
+  /* card */
+  .pop { 
+    display: flex;
+    position: fixed; 
+    margin-top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #efefe8;
+    height: 70%;
+    width: 300px;
+    border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 20px 21px 21px 21px;
+    -moz-border-radius: 20px 21px 21px 21px;
+    border: 1px solid #efefe8;
+
+    animation-name: modalAnimation;
+}
+ 
+/* .pop-button {
+    
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #EFEFE8;
+  padding: 1%;
+  background: linear-gradient(to bottom right, #4368AF, #262681);
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+  position: relative;
+  right: 20%;
+  top: 5%; 
+} */
+
+
+.pop-button {
+    
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #EFEFE8;
+  padding: 1%;
+  background: linear-gradient(to bottom right, #4368AF, #262681);
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+  position: relative;
+ 
+  top: 1%;
+  width: 100px;
+  height: 50px;
+}
+
+.badge {
+  top: 20px;
+}
+
+.paraBadge  {
+position: fixed;
+top: 80%;
+
+
+}
+
+}

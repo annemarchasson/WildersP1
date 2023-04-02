@@ -1,0 +1,324 @@
+
+    
+
+.title-a-propos {
+    font-size: 40px;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #98B92C;
+
+}
+
+.introduction {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    background-image: url("photos/imagebackgroundIntroduction.png");
+    background-size: cover;
+
+}
+
+.introduction-content {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.paragraph {
+    line-height: 2.5;
+    text-align: justify;
+    padding: 30px 20px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.paragraph h1 {
+    color: #98B92C;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.paragraph p {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+#first_img {
+    padding: 6rem 30px;
+}
+.imageW{
+    margin-top: 20%;
+}
+
+
+
+
+.img-title-selection {
+    width: 100%;
+    padding: 1%;
+}
+
+.wilders {
+    margin-top: 5%;
+}
+.LesWilders2023{
+    width: 100%;
+}
+.cards-desktop {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 90%;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+}
+
+
+.img-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 162px;
+}
+.img-grid:hover{
+    animation: AnimImgGrid 0.5s linear 0s 1 normal both;
+}
+
+.titleSection {
+    font-family: 'Bebas Neue', cursive;
+    grid-area: 2 / 3 / 4 / 7;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    color: #4368AF;
+    font-size: 300%;
+    margin: auto;
+}
+
+.titleSection .span1 {
+    color: #CC6644;
+
+}
+
+.card {
+    display: flex;
+    position: absolute;
+    height: 628px;
+    width: 546px;
+    margin-top: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #efefe8;
+    border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 20px 21px 21px 21px;
+    -moz-border-radius: 20px 21px 21px 21px;
+    border: 1px solid #efefe8;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+    animation-name: modalAnimation;
+}
+
+
+
+
+h3 {
+    padding-bottom: 5% !important;
+    width: 100%;
+    font-family: 'Caveat', cursive;
+    font-weight: normal;
+    font-style: normal;
+    color: #CC6644;
+    font-size: 50px;
+    padding: 2%;
+    text-shadow: 1px 1px 2px #7b3c27;
+    margin: 0;
+    text-align: center;
+    -webkit-border-radius: 21px 21px 0px 0px;
+    border: none !important;
+    background: linear-gradient(90deg, rgba(59, 85, 134, 1) 0%, rgba(67, 104, 175, 1) 39%, rgba(117, 156, 230, 1) 100%);
+}
+
+.photo {
+    position: relative;
+    bottom: 6%;
+    
+    background-size: cover !important;
+    background-position: center !important;
+    width: 30%;
+    margin: 2%;
+    background-color: white;
+    -webkit-border-radius: 20px 20px 20px 19px;
+   
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+}
+
+
+.name,
+.age,
+.last-job,
+.new-job,
+.description {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.name {
+    font-size: 25px;
+    margin: 4px;
+    position: relative;
+    bottom: 4%;
+    letter-spacing: 8px;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.31);
+}
+
+.age,
+.last-job,
+.new-job {
+    font-size: 15px;
+    position: relative;
+    bottom: 3%;
+}
+
+.description {
+    text-align: justify;
+    width: 80%;
+    margin: 2%;
+    margin-bottom: 4%;
+
+}
+
+.card-button {
+    
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 25px;
+    color: #EFEFE8;
+    padding: 1%;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+    position: relative;
+    right: 20%;
+    top: 5%;
+}
+.badge {
+    position: relative;
+    bottom: 10%;
+    right: -20%;
+    width: 22%;
+
+}
+.card-button:hover {
+    transform: scale(1.2);
+
+}
+
+
+@keyframes modalAnimation {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+
+
+.close-button {
+    color: #efefe8;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    right: inherit;
+    margin: 2%;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+    
+}
+
+@keyframes AnimImgGrid {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-15px);
+	}
+	24% {
+		opacity: 1;
+	}
+	
+}
+
+
+.modalBadge {
+    display: none;
+    bottom: 60px;
+    position: relative;
+    width: 390px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.badge:hover{
+    animation: AnimImgGrid 0.5s linear 0s 1 normal both;
+}
+  .closeBadge {
+    margin: 2%;
+    color: #EFEFE8;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.31);
+    font-size: 12px;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  .paraBadge{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color:#CC6644;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(20, end) forwards;
+    font-size:12px;
+    
+  }
+
+  .wrapper{
+    display: none;
+  }
+@media screen and (min-width:768px) and (max-width:1439px){
+    .cards-desktop{
+        width: 100%;
+
+    }
+    .img-grid{
+        width: 135px;
+    }
+    .wrapper{
+        display: none;
+      }
+    
+}
