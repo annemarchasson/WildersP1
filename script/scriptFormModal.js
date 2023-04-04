@@ -1,12 +1,17 @@
-const btnSub = document.getElementById('btnSubmit');
-const modal = document.querySelector('.modalContain');
-const btnClo = document.getElementsByClassName('close');
+const btnSubC = document.getElementById('btn-submit-contact');
+const modalC = document.getElementById('modalContain');
+const btnCloC = document.getElementById('btn-close-contact');
 
-btnSub.addEventListener("click", (event) => {
+btnSubC.onclick = function() {
     event.preventDefault();
-    modal.style.display = "flex"
-})
-
- btnClo.onclick = function () {
-    modal.style.display = "none";
+    modalC.style.display = "flex";
 }
+
+ btnCloC.onclick = function () {
+    event.preventDefault();
+    modalC.style.display = "none";
+}
+
+
+
+

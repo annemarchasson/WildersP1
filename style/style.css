@@ -1,0 +1,1613 @@
+/* CSS variable:*/
+* {
+    --main-bg-color: #efefe8;
+    --first-main-color: #4368AF;
+    --shadow-first-main-color: #172f5b;
+    --second-main-color: #98B92C;
+    --additionnal-color: #CC6644;
+
+    --title-font: 'Bebas Neue', cursive;
+    --content-font: 'IBM Plex Sans Condensed', sans-serif;
+    --info-font: 'Caveat', cursive;
+}
+
+/*Global Style*/
+* {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+
+/* CSS for DESKTOP! 
+...
+...*/
+@media screen and (min-width: 768px) {
+
+    /*MENU PC*/
+    .scrollingMenu {
+        display: none;
+    }
+
+    .nav {
+        height: 100px;
+    }
+
+    .Navbar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: var(--first-main-color);
+        justify-content: space-between;
+    }
+
+    .photologo {
+        width: 10%;
+        padding-left: 3%;
+        filter: drop-shadow(2px 2px 3px var(--shadow-first-main-color));
+
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        font-size: 1.5em;
+        padding: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li {
+        padding: 2rem;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: beige;
+        font-size: 0.8em;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*SECTION 1 INTRODUCTION PC*/
+    .title-a-propos {
+        font-size: 40px;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: #98B92C;
+    }
+    .introduction {
+        display: flex;
+        width: 100%;
+        align-self: center;
+        background-image: url("photos/imagebackgroundIntroduction.png");
+        background-size: cover;
+    }
+    .introduction-content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .paragraph {
+        line-height: 2.5;
+        text-align: justify;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 4%;
+        width: 50%;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+    }
+    #first_img {
+        height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .imageW {
+        margin-top: 20%;
+        width: 80%;
+        padding: 4%;
+    }
+
+
+
+
+
+    /*SECTION 2 WILDERS PC*/
+    .wilders {
+        margin-top: 5%;
+    }
+
+    .LesWilders2023 {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .cards-desktop {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .img-title-selection {
+        width: 100%;
+    }
+
+    .img-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .img-grid:hover {
+        animation: AnimImgGrid 0.5s linear 0s 1 normal both;
+    }
+
+    .titleSection {
+        grid-area: 2 / 3 / 4 / 7;
+        margin: auto;
+    }
+
+    .card {
+        display: flex;
+        position: absolute;
+        height: 498px;
+        width: 423px;
+        margin-top: 440px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        background-color: #efefe8;
+        border-radius: 21px 21px 21px 21px;
+        -webkit-border-radius: 20px 21px 21px 21px;
+        -moz-border-radius: 20px 21px 21px 21px;
+        border: 1px solid #efefe8;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+        animation-name: modalAnimation;
+    }
+
+    h3 {
+        padding-bottom: 5% !important;
+        width: 100%;
+        font-family: 'Caveat', cursive;
+        font-weight: normal;
+        font-style: normal;
+        color: #CC6644;
+        font-size: 50px;
+        text-shadow: 1px 1px 2px #7b3c27;
+        margin: 0;
+        text-align: center;
+        -webkit-border-radius: 21px 21px 0px 0px;
+        border: none !important;
+        background: linear-gradient(90deg, rgba(59, 85, 134, 1) 0%, rgba(67, 104, 175, 1) 39%, rgba(117, 156, 230, 1) 100%);
+    }
+
+    .photo {
+        position: relative;
+        bottom: 6%;
+        background-size: cover !important;
+        background-position: center !important;
+        width: 30%;
+        margin: 2%;
+        background-color: white;
+        -webkit-border-radius: 20px 20px 20px 19px;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+    }
+
+
+    .name,
+    .age,
+    .last-job,
+    .new-job,
+    .description {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+    }
+
+    .name {
+        font-size: 25px;
+        margin: 4px;
+        position: relative;
+        bottom: 4%;
+        letter-spacing: 8px;
+        text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.31);
+    }
+
+    .age,
+    .last-job,
+    .new-job {
+        font-size: 15px;
+        position: relative;
+        bottom: 3%;
+    }
+
+    .description {
+        text-align: justify;
+        width: 80%;
+        margin: 2%;
+        margin-bottom: 4%;
+
+    }
+
+    .card-button {
+
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: 25px;
+        color: #EFEFE8;
+        padding: 1%;
+        background: linear-gradient(to bottom right, #4368AF, #262681);
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+        position: relative;
+        right: 20%;
+        top: 5%;
+    }
+
+    .badge {
+        position: relative;
+        bottom: 10%;
+        right: -20%;
+        width: 22%;
+
+    }
+
+    .card-button:hover {
+        transform: scale(1.2);
+
+    }
+
+
+    @keyframes modalAnimation {
+        from {
+            top: -300px;
+            opacity: 0;
+        }
+
+        to {
+            top: 50%;
+            opacity: 1;
+        }
+    }
+
+
+
+    .close-button {
+        color: #efefe8;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: 20px;
+        position: absolute;
+        right: inherit;
+        margin: 2%;
+        background: linear-gradient(to bottom right, #4368AF, #262681);
+        border: none;
+        border-radius: 8px;
+        padding: 1%;
+        padding-right: 3%;
+        padding-left: 3%;
+
+    }
+
+    @keyframes AnimImgGrid {
+        0% {
+            animation-timing-function: ease-in;
+            opacity: 1;
+            transform: translateY(-15px);
+        }
+
+        24% {
+            opacity: 1;
+        }
+
+    }
+
+
+    .modalBadge {
+        display: none;
+        bottom: 60px;
+        position: relative;
+        width: 390px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .badge:hover {
+        animation: AnimImgGrid 0.5s linear 0s 1 normal both;
+    }
+
+    .closeBadge {
+        margin: 2%;
+        color: #EFEFE8;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        background: linear-gradient(to bottom right, #4368AF, #262681);
+        border: none;
+        border-radius: 8px;
+        padding: 1%;
+        padding-right: 2%;
+        padding-left: 2%;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.31);
+        font-size: 12px;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+    .paraBadge {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        color: #CC6644;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 1s steps(20, end) forwards;
+        font-size: 12px;
+
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    /* SECTION CONTACT PC*/
+
+    #contact {
+        margin-top: 100px;
+    }
+
+    .close {
+        margin-right: -55%
+    }
+
+    #titlecontact {
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        font-size: xx-large;
+        color: black;
+        margin-top: 3%;
+        text-align: center;
+        padding: 1%;
+        background: linear-gradient(0.25turn, #98B92C, #efefe8, #98B92C);
+    }
+
+    .address {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: x-large;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 4%;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+
+    .separation {
+        margin-bottom: 4%;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+        text-align: center;
+    }
+
+    .cardFrance {
+        width: 90%;
+
+    }
+
+    .contact {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: large;
+        background: linear-gradient(to bottom right, #98B92C, #5c750a);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 80%;
+        padding: 3%;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+
+    .form-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        filter: drop-shadow(0 0 0.75rem rgb(20, 22, 19));
+        width: 100%;
+        padding: 2%;
+    }
+
+    #campus {
+        margin-bottom: 8%;
+        font-size: x-large;
+        color: #efefe8;
+        text-decoration: underline;
+    }
+
+    .form-left {
+        width: 100%;
+        padding: 2%;
+
+    }
+
+    label {
+        border: none;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    input {
+        width: 94%;
+        margin-bottom: 1%;
+        border: none;
+        border-radius: 8px;
+        background-color: #efefe8;
+        padding: 3%;
+        margin-bottom: 3%;
+    }
+
+    textarea {
+        width: 94%;
+        margin-bottom: 2%;
+        border: none;
+        border-radius: 8px;
+        background-color: #efefe8;
+        padding: 2%;
+    }
+
+    .butSub {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: large;
+        color: #efefe8;
+        padding: 1%;
+        width: 15%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 43%;
+        background: linear-gradient(to bottom right, #4368AF, #262681);
+        border: none;
+        border-radius: 8px;
+    }
+    
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.modalContain {
+    display: none;
+    position: relative;
+    margin: auto;
+    bottom: 333px;
+    width: 34%;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    background:#efefe8;
+    padding: 2%;
+    margin: auto;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 22, 19));
+    color: black
+}
+.btn-close-contact {
+    margin-right: -92%;
+    width: 7%;
+    box-shadow: 1.4px 1.2px 2.5px 0.5px rgba(0, 0, 0, 0.31);
+    background: #98B92C;
+    border: none;
+    border-radius: 3px;
+}
+.btn-close-contact:hover {
+    color: rgb(83, 202, 83);
+}
+#logo-modal-contact {
+    width: 26%;
+    margin-bottom: 5%;
+    border-radius: 14px;
+    filter: drop-shadow(2px 1px 1px var(--shadow-first-main-color));
+}
+
+/*FOOTER PC*/
+footer {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #4368af;
+    color: white;
+    padding-top: 1%;
+  }
+
+}
+
+
+
+/* CSS for TABLET AND DESKTOP ! 
+...
+...*/
+@media screen and (min-width: 500px) and (max-width:768px) {
+
+     /*MENU TABLET*/
+     .scrollingMenu {
+        display: none;
+    }
+
+    .nav {
+        height: 100px;
+    }
+
+    .Navbar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: var(--first-main-color);
+        justify-content: space-between;
+    }
+
+    .photologo {
+        width: 10%;
+        padding-left: 3%;
+        filter: drop-shadow(2px 2px 3px var(--shadow-first-main-color));
+
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        font-size: 1.5em;
+        padding: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li {
+        padding: 2rem;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: beige;
+        font-size: 0.8em;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*SECTION 1 INTRODUCTION TABLET*/
+    .title-a-propos {
+        font-size: 20px;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: #98B92C;
+    }
+    .introduction {
+        display: flex;
+        width: 100%;
+        align-self: center;
+        background-image: url("photos/imagebackgroundIntroduction.png");
+        background-size: cover;
+    }
+    .introduction-content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .paragraph {
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 4%;
+        width: 50%;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+    }
+    #first_img {
+        height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .imageW {
+        margin-top: 20%;
+        width: 80%;
+        padding: 4%;
+    }
+
+    /* SECTION 2 WILDERS>WRAPPER TABLET */
+    #LesWilders2023 {
+        display:none;
+    }
+    .wrapper{
+        padding: 1%;
+        width: 100%;
+      }
+    
+    .carousel {
+      display: block;
+    }
+    .tablet{
+      display: none;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      line-height: 1.5;
+    }
+    .photo {
+      display: flex;
+      justify-content: center;
+    }
+    #imageModal {
+      width: 150px;
+      border-radius: 10%;
+    }
+    
+   
+      .wrapper i{
+       
+    top: 90%;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    line-height: 27px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.1s linear;
+}
+      .wrapper i:active{
+        transform: translateY(-50%) scale(0.9);
+      }
+      .wrapper i:hover{
+        background: #f2f2f2;
+      }
+      .wrapper i:first-child{
+        left: 15px;
+      }
+      .wrapper i:last-child{
+        right: 1px;
+      }
+      .wrapper .carousel{
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        
+      }
+      .carousel.dragging{
+        cursor: grab;
+        scroll-behavior: auto;
+      }
+      .carousel.dragging img{
+        pointer-events: none;
+      }
+      .carousel img{
+        height: 240px;
+        width: 240px;
+        object-fit: cover;
+        user-select: none;
+        margin-left: 14px;
+        border-radius: 20%;
+        
+      }
+      .carousel img:first-child{
+        margin-left: 0px;
+      }
+
+      
+ 
+/* MODAL CARD TABLET*/
+
+
+
+.pop{
+    display: flex;
+    position: absolute;
+    height: 468px;
+    width: 350px;
+    margin-top: 276px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #efefe8;
+    border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 20px 21px 21px 21px;
+    -moz-border-radius: 20px 21px 21px 21px;
+    border: 1px solid #efefe8;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+    animation-name: modalAnimation;
+}
+.pop-button {
+    
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 14px;
+    color: #EFEFE8;
+    padding: 1%;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.31);
+    position: relative;
+    right: 35%;
+    top: 8%;
+}
+
+}
+h3 {
+    padding-bottom: 5% !important;
+    width: 100%;
+    font-family: 'Caveat', cursive;
+    font-weight: normal;
+    font-style: normal;
+    color: #CC6644;
+    font-size: 34px;
+    text-shadow: 1px 1px 2px #7b3c27;
+    margin: 0;
+    text-align: center;
+    -webkit-border-radius: 21px 21px 0px 0px;
+    border: none !important;
+    background: linear-gradient(90deg, rgba(59, 85, 134, 1) 0%, rgba(67, 104, 175, 1) 39%, rgba(117, 156, 230, 1) 100%);
+}
+
+.photo {
+    position: relative;
+    bottom: 6%;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 25%;
+    margin: 2%;
+    background-color: white;
+    -webkit-border-radius: 20px 20px 20px 19px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+}
+
+
+.name,
+.age,
+.last-job,
+.new-job,
+.description {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.name {
+    font-size: 24px;
+    margin: 2px;
+    position: relative;
+    bottom: 4%;
+    letter-spacing: 5px;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.31);
+}
+
+.age,
+.last-job,
+.new-job {
+    font-size: 12px;
+    position: relative;
+    bottom: 1%;
+}
+
+.description {
+    text-align: justify;
+    width: 92%;
+    margin: 1%;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    padding: 2px;
+}
+
+
+
+.card-button {
+
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 25px;
+    color: #EFEFE8;
+    padding: 1%;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+    position: relative;
+    right: 20%;
+    top: 5%;
+}
+
+.badge {
+    position: relative;
+    bottom: 4%;
+    right: -36%;
+    width: 20%;
+}
+
+
+
+.card-button:hover {
+    transform: scale(1.2);
+
+}
+
+
+@keyframes modalAnimation {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+
+
+.close-button {
+    color: #efefe8;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    right: inherit;
+    margin: 2%;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+
+}
+
+@keyframes AnimImgGrid {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-15px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+}
+
+
+.modalBadge {
+   display: none;
+    bottom: 5px;
+    width: 323px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+}
+
+
+.badge:hover {
+    animation: AnimImgGrid 0.5s linear 0s 1 normal both;
+}
+
+.closeBadge {
+    color: #EFEFE8;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border: none;
+    border-radius: 4px;
+    padding: 0%;
+    padding-right: 1%;
+    padding-left: 1%;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.31);
+    font-size: 10px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.paraBadge {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #CC6644;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(20, end) forwards;
+    font-size: 10px;
+
+
+}
+
+
+  /* SECTION CONTACT TABLETT*/
+
+  #contact {
+    margin-top: 100px;
+}
+
+.close {
+    margin-right: -55%
+}
+
+#titlecontact {
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+    color: black;
+    margin-top: 3%;
+    text-align: center;
+    padding: 1%;
+    background: linear-gradient(0.25turn, #98B92C, #efefe8, #98B92C);
+}
+
+.address {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: x-large;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 4%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.separation {
+    margin-bottom: 4%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    text-align: center;
+}
+
+.cardFrance {
+    width: 90%;
+
+}
+
+.contact {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: large;
+    background: linear-gradient(to bottom right, #98B92C, #5c750a);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    padding: 3%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 22, 19));
+    width: 100%;
+    padding: 2%;
+}
+
+#campus {
+    margin-bottom: 8%;
+    font-size: x-large;
+    color: #efefe8;
+    text-decoration: underline;
+}
+
+.form-left {
+    width: 100%;
+    padding: 2%;
+
+}
+
+label {
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+input {
+    width: 94%;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 8px;
+    background-color: #efefe8;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+
+textarea {
+    width: 94%;
+    margin-bottom: 2%;
+    border: none;
+    border-radius: 8px;
+    background-color: #efefe8;
+    padding: 2%;
+}
+
+.butSub {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: large;
+    color: #efefe8;
+    padding: 1%;
+    width: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 43%;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border: none;
+    border-radius: 8px;
+}
+
+@keyframes myAnim {
+0% {
+    opacity: 0;
+    transform: translateY(-250px);
+}
+
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+.modalContain {
+display: none;
+position: relative;
+margin: auto;
+bottom: 333px;
+width: 37%;
+flex-direction: column;
+align-items: center;
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+background:#efefe8;
+padding: 2%;
+margin: auto;
+border-radius: 15px;
+filter: drop-shadow(0 0 0.75rem rgb(20, 22, 19));
+color: black
+}
+.btn-close-contact {
+margin-right: -92%;
+width: 7%;
+box-shadow: 1.4px 1.2px 2.5px 0.5px rgba(0, 0, 0, 0.31);
+background: #98B92C;
+border: none;
+border-radius: 3px;
+}
+.btn-close-contact:hover {
+color: rgb(83, 202, 83);
+}
+#logo-modal-contact {
+width: 26%;
+margin-bottom: 5%;
+border-radius: 14px;
+filter: drop-shadow(2px 1px 1px var(--shadow-first-main-color));
+}
+
+/*FOOTER TABLET*/
+footer {
+bottom: 0;
+position: relative;
+width: 100%;
+height: 5%;
+text-align: center;
+font-size: 1rem;
+background-color: #4368af;
+color: white;
+padding-top: 1%;
+}
+
+
+
+
+
+     
+
+
+
+
+
+/* CSS for MOBILE ! 
+...
+...*/
+@media screen and (min-width : 0px) and (max-width: 500px) {
+
+    /*MENU MOBILE*/
+    
+.scrollingMenu{
+    display: block;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    float:right;
+    position: relative;
+    bottom: 44px;
+    right: 4px;
+}
+
+.dropdown-menu-content {
+   
+    display: none;
+
+  }
+  .visible {
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    background-color: #4368af;
+    text-align: center;
+    font-size: 15px;
+    width: 88px;
+    height: 124px;
+    right: -5px;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 900,
+    'GRAD' 200,
+    'opsz' 48,
+  }
+  .material-symbols-outlined{
+    height:40px;
+    padding-top:2px;
+    padding-left: 20px;
+    background-color:#4368af;
+    color: white;
+  }
+  .dropdown-btn{
+    border-style: none;
+    padding: 0;
+    border: none;
+   background: none;
+  }
+
+.Navbar{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color:#4368af;
+}
+
+.photologo{
+    margin-left: 6%;
+    width: 44%;
+}
+.photologo img {
+    width: 20%;
+}
+.links {
+  display: none;
+}
+
+a{
+  text-decoration:none;
+  color: white;
+}
+
+/*SECTION 1 INTRODUCTION MOBILE*/
+
+.introduction {
+    
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    background: url(imagebackground.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 5px;
+    width: 100%;
+    }
+  
+    .introduction-content {
+        width: 100%;
+        text-align: center;
+        margin: 0%;
+        text-align: -webkit-center;
+    }
+  
+    .paragraph {
+      
+    font-size: 12px;
+    width: 80%;
+    text-align: justify;
+    padding: 7% 7% 0% 7%;    
+    }
+  
+    .paragraph p {
+      margin: auto;
+      font-weight: lighter;
+    }
+  
+    .title-a-propos {
+        font-size: 20px;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: #98B92C;
+    }
+  
+    
+    #first_img {
+        width: 100%;
+        height: 100px;
+        margin: 0%;
+        padding: 0%;
+    }
+  
+    .imageW {
+      width: 100px;
+      position: relative;
+      top: 9px; 
+      
+    }
+  
+/*SECTION 2 WRAPPER MOBILE*/
+
+    #LesWilders2023 {
+      display: none;
+    }
+  
+  
+    .img-grid{
+      display: inline;
+      border-radius: 20%;
+      margin: 4px;
+      width: 200px;
+    }
+  
+    .wrapper {  /* parent  wrapper */
+  
+    flex-direction: row;
+    max-width: 800px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+      
+    }
+  
+    .wrapper i{
+      top: 50%;
+      height: 44px;
+      width: 44px;
+      cursor: pointer;
+      font-size: 1.15rem;
+      position: absolute;
+      text-align: center;
+      line-height: 44px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+    .wrapper i:active{
+      transform: translateY(-50%) scale(0.9);
+    }
+    .wrapper i:hover{
+      background: #f2f2f2;
+    }
+    .wrapper i:first-child{
+      left: -12px;
+      display: none;
+    }
+    .wrapper i:last-child{
+      right: -12px;
+    }
+  
+   
+    .wrapper .carousel{
+      font-size: 0px;
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+    
+    }
+  
+    
+    .carousel.dragging{
+      cursor: grab;
+      scroll-behavior: auto;
+    }
+    .carousel.dragging img{
+      pointer-events: none;
+    }
+    .carousel img{
+      height: 220px;
+      object-fit: cover;
+      user-select: none;
+      margin-left: 14px;
+      border-radius: 20%;
+    
+    }
+    .carousel img:first-child{
+      margin-left: 0px;
+    }
+    
+    /* card */
+    .pop { 
+     
+    display: flex;
+    position: absolute;
+    right: 9%;
+    bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #efefe8;
+    height: 228px;
+    width: 350px;
+    -webkit-border-radius: 20px 21px 21px 21px;
+    -moz-border-radius: 20px 21px 21px 21px;
+    border: 1px solid #efefe8;
+  }
+   h3 {
+    height: 18px;
+    font-size: 22px;
+   }
+.pop .photo {
+    position: relative;
+    bottom: 16%;
+    right: 33%;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 26%;
+    margin: 2%;
+    background-color: white;
+    -webkit-border-radius: 20px 20px 20px 19px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.31);
+}
+.name {
+    
+    width: 70%;
+    font-size: 15px;
+    margin: 1px;
+    position: relative;
+    bottom: 42%;
+    right: -16%;
+    justify-content: center;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.31);
+    text-align: center;
+    letter-spacing: 2px;
+}
+.age, .last-job, .new-job {
+    font-size: 10px;
+    position: relative;
+    bottom: 38%;
+}
+.description {
+    text-align: justify;
+    width: 88%;
+    position: relative;
+    bottom: 37%;
+    font-size: 10px;
+    letter-spacing: -0.5px;
+    padding: 1px;
+}
+.pop-button {
+    position: relative;
+    bottom: 35%;
+    right: 34%;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 14px;
+    color: #EFEFE8;
+    padding: 1%;
+    background: linear-gradient(to bottom right, #4368AF, #262681);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.31);
+
+}
+.badge {
+    position: relative;
+    bottom: 53%;
+    right: -40%;
+    width: 12%;
+}
+
+.modalBadge {
+    display: none;
+     bottom: 1%;
+     width: 300px;
+     flex-direction: row-reverse;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     text-align: center;
+ }
+ 
+ 
+ .badge:hover {
+     animation: AnimImgGrid 0.5s linear 0s 1 normal both;
+ }
+ 
+ .closeBadge {
+     color: #EFEFE8;
+     font-family: 'IBM Plex Sans Condensed', sans-serif;
+     background: linear-gradient(to bottom right, #4368AF, #262681);
+     border: none;
+     border-radius: 4px;
+     padding: 0%;
+     padding-right: 1%;
+     padding-left: 1%;
+     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.31);
+     font-size: 10px;
+ }
+ 
+ @keyframes typing {
+     from {
+         width: 0
+     }
+ 
+     to {
+         width: 100%
+     }
+ }
+ 
+ .paraBadge {
+     font-family: 'IBM Plex Sans Condensed', sans-serif;
+     color: #CC6644;
+     overflow: hidden;
+     white-space: nowrap;
+     animation: typing 1s steps(20, end) forwards;
+     font-size: 10px;
+ 
+ 
+ }
+ 
+
+    /*SECTION CONTACT MOBILE*/
+    #contact {
+        margin-top: 10px;
+    }
+    
+    #titlecontact {
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        font-size: x-large;
+        color: #efefe8;
+        padding: 3%;
+        margin-top: 9%;
+        background: #98B92C;
+    }
+
+    .address {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        display: flex;
+        flex-direction: column;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .separation {
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-left: 8%;
+        font-size: 14px;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        background-color: #efefe8;
+    }
+
+    .form-right {
+        display: none;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: 100%;
+    }
+
+    input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 2%;
+        border: none;
+        background-color: #efefe8;
+        border-bottom: solid #4368AF 1px;
+        padding: 2%;
+    }
+
+    textarea {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 2%;
+        border: none;
+        background-color: #efefe8;
+        padding: 2%;
+        resize: none;
+    }
+
+    .personal-info {
+        width: 90%;
+        padding: 2%;
+    }
+
+    .butSub {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: small;
+        color: #efefe8;
+        padding: 1%;
+        width: 24%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 38%;
+        background: linear-gradient(to bottom right, #4368AF, #262681);
+        border: none;
+        border-radius: 8px;
+    }
+    
+}
