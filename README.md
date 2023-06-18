@@ -16,3 +16,25 @@ Our team is delighted to present this "book of the wilders" project, a digital g
 Our Goal: Introduce the students of the Wild Code School 2023 class, to recruiters and to the entire community of past and future wilders.
 
 We hope to create vocations in other people with digital fiber, to inspire possible reconversions and to promote the know-how of the students of our school.
+
+
+Fonctionnalités
+Présentation trombinoscope
+Possibilité de rentrer en contact avec un étudiant
+
+![Capture d'écran 2023-06-18 184426](https://github.com/annemarchasson/WildersP1/assets/66382092/01b577bf-51be-4e41-9a01-c575e2fda31a)
+
+Utilisation
+
+Clonez ce dépôt sur votre machine locale.
+
+Copy code
+git clone https://github.com/annemarchasson/WildersP1.git
+
+Accédez au répertoire du projet.
+
+Copy code
+cd WildersP1
+
+Ouvrez le fichier index.html dans votre navigateur web préféré.
+
